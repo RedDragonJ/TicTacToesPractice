@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RmS-Ky-w3k">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tic Tac Toes View Controller-->
+        <scene sceneID="fSC-B7-RUw">
+            <objects>
+                <viewController id="RmS-Ky-w3k" customClass="TicTacToesViewController" customModule="TicTacToesPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXm-SC-QBK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board" translatesAutoresizingMaskIntoConstraints="NO" id="BQX-y9-4UJ">
+                                <rect key="frame" x="10" y="228.66666666666663" width="355" height="355"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BQX-y9-4UJ" secondAttribute="height" multiplier="1:1" id="w8v-gX-hba"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ9-N1-6Ya">
+                                <rect key="frame" x="50" y="74" width="275" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5dH-1S-RXy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <color key="textColor" red="0.23529411759999999" green="0.70196078429999997" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qm-Gz-xYp" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="137" y="356" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HvT-2E-JFh"/>
+                                    <constraint firstAttribute="width" constant="100" id="b0k-Gy-cN1"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="n7G-IU-Mta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaJ-ab-ld2" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="137" y="236" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Rza-Qi-UIY"/>
+                                    <constraint firstAttribute="width" constant="100" id="rxq-Xh-rfC"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="2XA-TF-S8y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7G-Ry-IfM" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="137" y="476" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Qfl-LW-PVd"/>
+                                    <constraint firstAttribute="width" constant="100" id="tts-xY-9IL"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="lVE-Zl-VTG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHK-6N-FZA" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="17" y="356" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4WA-Jq-VOm"/>
+                                    <constraint firstAttribute="width" constant="100" id="C2Q-Vv-22J"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="iJU-kV-Vmg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ma8-Yj-lud" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="257" y="356" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="QJP-g1-gKr"/>
+                                    <constraint firstAttribute="width" constant="100" id="hyq-OP-lmT"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="LhU-pO-sO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOI-3k-5Nz" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="17" y="236" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BJg-1d-GnH"/>
+                                    <constraint firstAttribute="width" constant="100" id="G9I-rm-xSh"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="B5P-PO-kjC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iys-H5-P0z" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="257" y="236" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HS2-zs-pE9"/>
+                                    <constraint firstAttribute="width" constant="100" id="n8k-PG-fwG"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="3IO-HC-XwL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmG-Yr-ZtY" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="17" y="476" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mIf-91-o4C"/>
+                                    <constraint firstAttribute="height" constant="100" id="pyH-XF-LzT"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="pml-pP-jAn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dq-ji-zhQ" customClass="TicTacToesButton" customModule="TicTacToesPractice" customModuleProvider="target">
+                                <rect key="frame" x="257" y="476" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0eg-4z-4cq"/>
+                                    <constraint firstAttribute="height" constant="100" id="IWA-YP-K0B"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="tttGameAction:" destination="RmS-Ky-w3k" eventType="touchUpInside" id="jtX-HK-N8j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ma8-Yj-lud" firstAttribute="centerY" secondItem="6Qm-Gz-xYp" secondAttribute="centerY" id="43J-aB-3in"/>
+                            <constraint firstItem="c7G-Ry-IfM" firstAttribute="leading" secondItem="TmG-Yr-ZtY" secondAttribute="trailing" constant="20" id="7OB-bo-ohQ"/>
+                            <constraint firstItem="c7G-Ry-IfM" firstAttribute="top" secondItem="6Qm-Gz-xYp" secondAttribute="bottom" constant="20" id="AFe-rS-6Mf"/>
+                            <constraint firstItem="6Qm-Gz-xYp" firstAttribute="leading" secondItem="AHK-6N-FZA" secondAttribute="trailing" constant="20" id="BgU-s6-N7L"/>
+                            <constraint firstItem="c7G-Ry-IfM" firstAttribute="centerX" secondItem="6Qm-Gz-xYp" secondAttribute="centerX" id="C8E-JV-JGq"/>
+                            <constraint firstItem="uaJ-ab-ld2" firstAttribute="leading" secondItem="vOI-3k-5Nz" secondAttribute="trailing" constant="20" id="FiZ-M8-bqX"/>
+                            <constraint firstItem="lvL-e1-Ofi" firstAttribute="trailing" secondItem="vZ9-N1-6Ya" secondAttribute="trailing" constant="50" id="GRO-hN-EFD"/>
+                            <constraint firstItem="lvL-e1-Ofi" firstAttribute="trailing" secondItem="BQX-y9-4UJ" secondAttribute="trailing" constant="10" id="OVg-RP-g3R"/>
+                            <constraint firstItem="0Dq-ji-zhQ" firstAttribute="leading" secondItem="c7G-Ry-IfM" secondAttribute="trailing" constant="20" id="Pp7-uL-vZ5"/>
+                            <constraint firstItem="BQX-y9-4UJ" firstAttribute="leading" secondItem="lvL-e1-Ofi" secondAttribute="leading" constant="10" id="UTh-KW-atC"/>
+                            <constraint firstItem="iys-H5-P0z" firstAttribute="leading" secondItem="uaJ-ab-ld2" secondAttribute="trailing" constant="20" id="Ute-cn-TGc"/>
+                            <constraint firstItem="c7G-Ry-IfM" firstAttribute="centerY" secondItem="0Dq-ji-zhQ" secondAttribute="centerY" id="ZAN-0M-Cgf"/>
+                            <constraint firstItem="BQX-y9-4UJ" firstAttribute="centerX" secondItem="kXm-SC-QBK" secondAttribute="centerX" id="a8r-VX-ooV"/>
+                            <constraint firstItem="6Qm-Gz-xYp" firstAttribute="centerY" secondItem="kXm-SC-QBK" secondAttribute="centerY" id="bFr-HI-Jzl"/>
+                            <constraint firstItem="vZ9-N1-6Ya" firstAttribute="leading" secondItem="lvL-e1-Ofi" secondAttribute="leading" constant="50" id="cbb-6j-3cG"/>
+                            <constraint firstItem="vZ9-N1-6Ya" firstAttribute="top" secondItem="lvL-e1-Ofi" secondAttribute="top" constant="30" id="duY-Xd-Uhz"/>
+                            <constraint firstItem="uaJ-ab-ld2" firstAttribute="centerX" secondItem="6Qm-Gz-xYp" secondAttribute="centerX" id="fv3-nq-NDB"/>
+                            <constraint firstItem="6Qm-Gz-xYp" firstAttribute="centerX" secondItem="kXm-SC-QBK" secondAttribute="centerX" id="g7l-3I-HET"/>
+                            <constraint firstItem="AHK-6N-FZA" firstAttribute="centerY" secondItem="6Qm-Gz-xYp" secondAttribute="centerY" id="iqW-Td-hh7"/>
+                            <constraint firstItem="6Qm-Gz-xYp" firstAttribute="top" secondItem="uaJ-ab-ld2" secondAttribute="bottom" constant="20" id="jn6-N7-MtI"/>
+                            <constraint firstItem="c7G-Ry-IfM" firstAttribute="centerY" secondItem="TmG-Yr-ZtY" secondAttribute="centerY" id="oRY-fC-JTf"/>
+                            <constraint firstItem="BQX-y9-4UJ" firstAttribute="centerY" secondItem="kXm-SC-QBK" secondAttribute="centerY" id="ows-vH-bEs"/>
+                            <constraint firstItem="vOI-3k-5Nz" firstAttribute="centerY" secondItem="uaJ-ab-ld2" secondAttribute="centerY" id="pBw-qN-hqO"/>
+                            <constraint firstItem="iys-H5-P0z" firstAttribute="centerY" secondItem="uaJ-ab-ld2" secondAttribute="centerY" id="yGh-ke-9Ob"/>
+                            <constraint firstItem="ma8-Yj-lud" firstAttribute="leading" secondItem="6Qm-Gz-xYp" secondAttribute="trailing" constant="20" id="zWy-JO-0Cj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lvL-e1-Ofi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aar-8f-ZNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="139.65517241379311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="board" width="1078" height="1068"/>
+    </resources>
+</document>
